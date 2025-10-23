@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in LaTeX
+% Based on sb2nov/jakegutierrez template
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Niraj Ojha} \\ \vspace{2pt}
+    \small 337-292-3058 $|$ \href{mailto:nischalojha2@gmail.com}{\underline{nischalojha2@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/NischalOjha}{\underline{linkedin.com/in/NischalOjha}} $|$
+    \href{https://github.com/NirajO}{\underline{github.com/NirajO}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {McNeese State University}{Lake Charles, LA}
+      {Bachelor of Science in Computer Science}{Aug. 2022 -- Dec. 2025}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Programmer}{Aug. 2022 -- Present}
+      {McNeese State University}{Lake Charles, LA}
+      \resumeItemListStart
+        \resumeItem{Contributed to the development and maintenance of academic software used for instruction and research.}
+        \resumeItem{Assisted in testing and debugging scripts utilized in classroom instruction and lab exercises.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Tutor: Math \& Science}{2018 -- Present}
+      {Freelance}{}
+      \resumeItemListStart
+        \resumeItem{Tutored students from middle school through college in mathematics and science to improve understanding and performance.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{Tetris Game} $|$ \emph{Java}}{Aug. 2023 -- Dec. 2023}
+      \resumeItemListStart
+        \resumeItem{Built a functional Tetris clone applying object-oriented design principles.}
+        \resumeItem{Implemented real-time collision detection, piece rotation logic, and a scoring system.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Kiosk-based Food Ordering System} $|$ \emph{JavaScript, React, Node.js, HTML/CSS}}{Jan. 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a responsive self-service kiosk interface for restaurants with organized menu categories.}
+        \resumeItem{Implemented cart, payment flow, and receipt generation (frontend-first architecture).}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Tool Sharing Website} $|$ \emph{HTML, CSS, JavaScript}}{Jan. 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Collaborated to create a web application for listing and renting tools with category-based browsing.}
+        \resumeItem{Added user authentication and form handling for item posting and requests.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Banana Token} $|$ \emph{Solidity, Hardhat, React}}{2025}
+      \resumeItemListStart
+        \resumeItem{Created a mintable, ownable ERC-20 token; deployed and tested on the Sepolia testnet.}
+        \resumeItem{Built a React frontend with MetaMask integration for mint, burn, transaction history, and dynamic symbol display.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP & TEAMWORK-----------
+\section{Leadership \& Teamwork}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Captain, Local Cricket Team}{2016 -- 2019}
+      {Damak, Jhapa, Nepal}{}
+      \resumeItemListStart
+        \resumeItem{Led a 15-member local cricket team in inter-school and community tournaments, fostering coordination and sportsmanship.}
+        \resumeItem{Organized practice schedules, set match strategies, and motivated teammates to perform under pressure.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Team Lead, School Project Collaboration}{2018 -- 2019}
+      {Damak, Jhapa, Nepal}{}
+      \resumeItemListStart
+        \resumeItem{Guided a 4-member team on a science project; delegated tasks, set milestones, and ensured on-time delivery.}
+        \resumeItem{Facilitated problem-solving discussions and final presentation quality, resulting in successful project outcomes.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, PHP, SQL, JavaScript, HTML/CSS} \\
+     \textbf{Frameworks}{: React, Node.js} \\
+     \textbf{Developer Tools}{: Git, Google Cloud Platform, VS Code, Visual Studio} \\
+     \textbf{Libraries}{: pandas, NumPy, Matplotlib, PySide}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
