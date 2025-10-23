@@ -13,8 +13,9 @@ This repository contains **`resume_generator.tex`**, a LaTeX source for generati
 
 ## Build (quick start)
 
-### Option A — latexmk (recommended)
 ```bash
 latexmk -pdf resume_generator.tex
 # or:
 latexmk -xelatex resume_generator.tex
+
+
