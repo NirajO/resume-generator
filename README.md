@@ -1,21 +1,28 @@
-# Resume Generator (LaTeX)
+# 📄 Resume Generator (LaTeX Template)
 
-This repository contains **`resume_generator.tex`**, a LaTeX source for generating a polished PDF resume.
+This repository contains a clean, modern LaTeX template for creating professional résumés or CVs. It is designed for simplicity, flexibility, and visual appeal — making it easy to customize your personal information, sections, and styling.
+Feel free to edit to generate your own resume.
 
-## What you need
-- A LaTeX distribution:
-  - **Windows:** [MiKTeX] or [TeX Live]
-  - **macOS:** MacTeX
-  - **Linux:** TeX Live
-- (Optional) `latexmk` for one-command builds
+---
 
-> If you use custom fonts or Unicode-heavy content, prefer **XeLaTeX** or **LuaLaTeX**.
+## ✨ Features
 
-## Build (quick start)
+- ✅ Minimal and elegant layout  
+- ✅ Easy customization of sections (Education, Experience, Projects, Skills, etc.)  
+- ✅ Automatic spacing and alignment for consistent formatting  
+- ✅ Fully compatible with `pdflatex`, `xelatex`, and `lualatex`  
+- ✅ Simple structure — one `.tex` file to edit
 
+---
+
+## 🧰 Requirements
+
+To compile the résumé, ensure you have a LaTeX distribution installed, such as:
+
+- [TeX Live](https://www.tug.org/texlive/) (Linux / macOS)
+- [MiKTeX](https://miktex.org/) (Windows)
+- [Overleaf](https://www.overleaf.com/) (Online editor)
+
+or you can go to www.overleaf.com to compile and download as PDF.
 ```bash
-latexmk -pdf resume_generator.tex
-# or:
-latexmk -xelatex resume_generator.tex
-
-
+xelatex resume_generator.tex
